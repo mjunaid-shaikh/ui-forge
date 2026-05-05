@@ -1,0 +1,28 @@
+// ── Angular Material custom theme ──
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$primary: mat.define-palette(mat.$indigo-palette);
+$accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$warn: mat.define-palette(mat.$red-palette);
+
+$theme: mat.define-light-theme((color: (primary: $primary, accent: $accent, warn: $warn),
+            typography: mat.define-typography-config(),
+            density: 0));
+
+@include mat.all-component-themes($theme);
+
+// ── Global resets ──
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    background-color: #f5f5f5; // ← add this
+    color: #212121; // ← add this
+}
