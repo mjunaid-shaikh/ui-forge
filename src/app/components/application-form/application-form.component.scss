@@ -1,0 +1,42 @@
+/* Page background */
+body {
+    background-color: #f4f6f9;
+}
+
+/* Card container */
+.form-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.form-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Button */
+.submit-btn {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #125ea8;
+}
+
+/* Spacing improvement for fields */
+.col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}

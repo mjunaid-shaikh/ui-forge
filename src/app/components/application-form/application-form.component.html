@@ -1,0 +1,49 @@
+<div class="container mt-5">
+    <div class="form-card">
+
+        <h3 class="form-title">Job Application Form</h3>
+
+        <form [formGroup]="applicationForm">
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <cust-textBox [formGroupText]="applicationForm" [type]="'text'" [controlNameText]="'fullName'"
+                        label="Full Name"></cust-textBox>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <cust-textBox [formGroupText]="applicationForm" [type]="'email'" [controlNameText]="'email'"
+                        label="Email"></cust-textBox>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <cust-textBox [formGroupText]="applicationForm" [type]="'number'" [controlNameText]="'phone'"
+                        label="Phone"></cust-textBox>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <cust-textBox [formGroupText]="applicationForm" [type]="'text'" [controlNameText]="'city'"
+                        label="City"></cust-textBox>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <cust-textBox [formGroupText]="applicationForm" [type]="'text'" [controlNameText]="'state'"
+                        label="State"></cust-textBox>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <cust-textBox [formGroupText]="applicationForm" [type]="'text'" [controlNameText]="'zip'"
+                        label="ZIP Code"></cust-textBox>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                    <button type="submit" class="submit-btn" (click)="getApplicationValue()">
+                        Submit Application
+                    </button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</div>
