@@ -36,6 +36,11 @@
                         label="ZIP Code"></cust-textBox>
                 </div>
 
+                <div class="col-md-4 mb-3">
+                    <cust-radio [formGroupText]="applicationForm" [controlNameText]="'gender'" [radioArray]="radioArray"
+                        (valueChange)="getRadioEvent($event)" [label]="'Select prefered city'"></cust-radio>
+                </div>
+
                 <div class="col-12 text-center mt-4">
                     <button type="submit" class="submit-btn" (click)="getApplicationValue()">
                         Submit Application
