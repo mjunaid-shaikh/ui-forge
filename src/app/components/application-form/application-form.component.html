@@ -41,6 +41,11 @@
                         (valueChange)="getRadioEvent($event)" [label]="'Select prefered city'"></cust-radio>
                 </div>
 
+                <div class="col-md-4 mb-3">
+                    <cust-datepicker [formGroupText]="applicationForm" [controlNameText]="'startDate'"
+                        (valueChange)="getStartDate($event)" [custValue]="'Start Date'"></cust-datepicker>
+                </div>
+
                 <div class="col-12 text-center mt-4">
                     <button type="submit" class="submit-btn" (click)="getApplicationValue()">
                         Submit Application
